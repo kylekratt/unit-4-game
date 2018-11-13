@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Star Wars";
+    src: url(../Starjedi.ttf) format("truetype");
+}
+header{
+    color: yellow;
+    font-size: 4em;
+    font-family: "Star Wars";
+    text-align: center;
+    margin-bottom: 5px;
+}
+body{
+    background-image: url(../images/Background.jpg)
+}
+.Jedi{
+    height: 150px;
+    width: 180px;
+    position: relative;
+    background: black;
+    border: 2px solid blue;
+    text-align: center;
+}
+.jediPic{
+    height: 66.7%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 16.7%;
+    left: 0%;
+}
+.name{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2px;
+    left: 0px;
+    color:white;
+    font-family: "Verdana";
+}
+.hp{
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    color: white;
+    font-family: "Verdana";
+    width: 100%;
+    text-align: center;
+}
+h2{
+    color: blue;
+    font-family: "Star Wars";
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#charSelect{
+    width: 60%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
