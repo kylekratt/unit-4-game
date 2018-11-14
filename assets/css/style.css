@@ -10,9 +10,10 @@ header{
     margin-bottom: 5px;
 }
 body{
-    background-image: url(../images/Background.jpg)
+    background-image: url(../images/Background.jpg);
+    z-index: 0;
 }
-.Jedi{
+button{
     height: 150px;
     width: 180px;
     position: relative;
@@ -58,4 +59,28 @@ h2{
     margin:auto;
     display: flex;
     justify-content: space-between;
+}
+#enemies{
+    min-height: 200px;
+    margin-left: 5%;
+}
+h3{
+    color: red;
+    font-family: "Star Wars";
+    font-size: 2em;
+    margin-bottom: 10px;
+    position: relative;
+    left: 10%;
+    visibility: hidden;
+}
+#arena{
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    min-height: 500px;
+    background: blue;
+    border: 2px solid cyan;
+    top: 15%;
+    left: 20%;
+    visibility: hidden;
 }
