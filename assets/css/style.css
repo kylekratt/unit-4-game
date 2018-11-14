@@ -63,6 +63,7 @@ h2{
 #enemies{
     min-height: 200px;
     margin-left: 5%;
+    display: flex;
 }
 h3{
     color: red;
@@ -78,7 +79,7 @@ h4{
     font-family: "Star Wars";
     font-size: 3em;
     position: absolute;
-    top: 10px;
+    top: 30px;
     margin-left: -78px;
     left: 50%;
 
@@ -89,7 +90,7 @@ h4{
     height: 70%;
     min-height: 600px;
     min-width: 900px;
-    background: darkblue;
+    background: rgb(0, 0, 3);
     border: 2px solid cyan;
     top: 15%;
     left: 10%;
@@ -192,8 +193,9 @@ h4{
     background: slategrey;
     border: 1px solid black;
     color: yellow;
-    font-family: 'lucida sans';
+    font-family: 'impact';
     font-size: 35px;
+    padding-bottom:42px;
 }
 #audio{
     height: 0px;
@@ -208,4 +210,16 @@ h4{
     opacity: 0;
     background: white;
     z-index: 5;
+}
+#attack:active{
+    background: lightgrey;
+}
+#attack:hover{
+    border: yellow;
+    color: red;
+}
+.Jedi:hover,.enemy:hover{
+    width: 300px;
+    height: 250px;
+    font-size: 1.5em;
 }

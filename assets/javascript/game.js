@@ -66,7 +66,7 @@ $(document.body).on('click',".enemy", function(){
 $(document.body).on('click',"#attack", function(){
     audio.play();
     $("#flash").css({background: "white"});
-    $("#flash").animate({"opacity": "1"}, 50,function(){$("#flash").animate({"opacity": "0"}, 50)})
+    $("#flash").animate({"opacity": "1"}, 50,function(){$("#flash").animate({"opacity": "0"}, 200)})
     char2.hp -= attackStack;
     attackStack += char1.attack;
     $("#stack").html(attackStack);
@@ -143,7 +143,7 @@ function duel(char1, char2){
 function counter(){
     audio.play();
     $("#flash").css({background: "red"});
-    $("#flash").animate({"opacity": "1"}, 50,function(){$("#flash").animate({"opacity": "0"}, 50)})
+    $("#flash").animate({"opacity": "1"}, 50,function(){$("#flash").animate({"opacity": "0"}, 200)})
     char1.hp -= char2.counter;
     $("#hpnum").html(char1.hp + "/" + char1.maxhp);
     $("#yourhp").animate({width: (260*char1.hp/char1.maxhp).toString()+"px"});
