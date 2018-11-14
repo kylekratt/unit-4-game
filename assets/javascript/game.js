@@ -45,7 +45,7 @@ function onYouTubeIframeAPIReady() {
         },
         videoId: 'xlYCxbBZUCY'
     });
-
+}
 
 $(document.body).on('click',".Jedi", function(){
     $(this).removeClass("Jedi").addClass("myChar");
@@ -152,5 +152,4 @@ function counter(){
         $(".game").html("<p>Game over</p>")
         $(".game").css({"font-family": "Star Wars","font-size": "10em","color": "red","text-align": "center"})
     }
-}
 }
