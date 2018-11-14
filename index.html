@@ -7,38 +7,67 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <header>Star Wars RPG</header>
-<div>
+<div class="game">
     <h2>Choose your character</h2>
     <div id="charSelect">
         <button class="Jedi" id="obiwan">
             <div class="name">Obi-Wan Kenobi</div>
-            <img class="jediPic" src="assets/images/Obi-Wan Passive.jpg">
-            <div class="hp">150</div>
+            <img class="jediPic" src="assets/images/Obi-Wan-Passive.jpg">
+            <div class="hp">HP:100 ATK:6 CTR:15</div>
         </button>
         <button class="Jedi" id="yoda">
             <div class="name">Yoda</div>
             <img class="jediPic" src="assets/images/Yoda-Passive.jpg">
-            <div class="hp">100</div>
+            <div class="hp">HP:60 ATK:10 CTR:16</div>
         </button>
         <button class="Jedi" id="windu">
             <div class="name">Mace Windu</div>
             <img class="jediPic" src="assets/images/Mace-Windu-Passive.jpg">
-            <div class="hp">180</div>
+            <div class="hp">HP:110 ATK:4 CTR:12</div>
         </button>
         <button class="Jedi" id="anakin">
             <div class="name">Anakin</div>
             <img class="jediPic" src="assets/images/Anakin-Passive.jpg">
-            <div class="hp">120</div>
+            <div class="hp">HP:80 ATK:9 CTR:10</div>
         </button>
     </div>
     <br>
     <h3>Remaining Enemies</h3>
     <div id="enemies">
-        
-    </div>
-    <div id="arena"></div>
-</div>
 
+    </div>
+    <div id="arena">
+        <div id="flash"></div>
+        <h4>Duel!</h4>
+        <div class="duelist" id="char1">
+            <div class="name" id="char1name"></div>
+            <img class="jediPic" id="yourPic">
+            <div class="hp" id="char1stats"></div>
+        </div>
+        <div class=handle id="yourhandle"></div>
+        <div class="hpbar" id="yourhpbar">
+            <div id="yourhp"></div>
+            <span id="hpnum"></span>
+        </div>
+        <div class="duelist" id="char2">
+            <div class="name" id="char2name"></div>
+            <img class="jediPic" id="enemyPic">
+            <div class="hp" id="char2stats"></div>
+        </div>
+        <div class=handle id="enemyhandle"></div>
+        <div class="hpbar" id="enemyhpbar">
+            <div id="enemyhp"></div>
+            <span id="enemyhpnum"></span>
+        </div>
+        <div id="attackStack">Attack Stack:<span id="stack"></span> dmg</div>
+        <button id="attack">Attack</button>
+    
+    </div>
+    
+</div>
+<div id="audio"></div>
+<script src="https://www.youtube.com/iframe_api"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="assets/javascript/game.js"></script>
+
 </html>

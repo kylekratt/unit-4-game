@@ -33,7 +33,7 @@ button{
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 2px;
+    top: 3px;
     left: 0px;
     color:white;
     font-family: "Verdana";
@@ -73,14 +73,139 @@ h3{
     left: 10%;
     visibility: hidden;
 }
+h4{
+    color: yellow;
+    font-family: "Star Wars";
+    font-size: 3em;
+    position: absolute;
+    top: 10px;
+    margin-left: -78px;
+    left: 50%;
+
+}
 #arena{
     position: absolute;
     width: 60%;
     height: 70%;
-    min-height: 500px;
-    background: blue;
+    min-height: 600px;
+    min-width: 900px;
+    background: darkblue;
     border: 2px solid cyan;
     top: 15%;
     left: 20%;
     visibility: hidden;
+}
+.duelist{
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    background: black;
+    border: 2px solid yellow;
+    text-align: center;
+    z-index: 1;
+}
+#char1{
+    top: 20%;
+    left: 12%;
+}
+#char2{
+    top: 20%;
+    right: 12%;
+}
+.hpbar{
+    width: 260px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid cyan;
+    border-left: 0px;
+    background: black;
+}
+#yourhpbar{
+    top: 70%;
+    left: 16%;
+}
+.handle{
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    margin:-1px;
+    background: lightgrey;
+    border: 2px solid darkslategrey;
+    border-right: 0px;
+}
+#enemyhpbar{
+    top: 70%;
+    right: 12%;
+}
+#yourhandle{
+    top: 70%;
+    right: 84%
+}
+#enemyhandle{
+    top: 70%;
+    right: 12%;
+    margin-right: 262px;
+}
+#yourhp{
+    width: 260px;
+    min-height: 20px;
+    background: green;
+    float: left;
+}
+#hpnum{
+    color: white;
+    position: absolute;
+    top: 3px;
+    left: 40%;
+    text-align: center;
+}
+#enemyhpnum{
+    color: white;
+    position: absolute;
+    top: 3px;
+    left: 40%;
+    text-align: center;
+}
+#enemyhp{
+    width: 260px;
+    min-height: 20px;
+    background: red;
+    float: left;
+}
+#attackStack{
+    position: absolute;
+    left: 50%;
+    width: 180px;
+    margin-left: -90px;
+    text-align: center;
+    bottom: 20%;
+    color: white;
+    font-family: "Verdana";
+}
+#attack{
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -90px;
+    background: slategrey;
+    border: 1px solid black;
+    color: yellow;
+    font-family: 'lucida sans';
+    font-size: 35px;
+}
+#audio{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#flash{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: white;
+    z-index: 5;
 }
