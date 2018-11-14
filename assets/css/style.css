@@ -11,7 +11,7 @@ header{
 }
 body{
     background-image: url(../images/Background.jpg);
-    z-index: 0;
+    background-size: cover;
 }
 button{
     height: 150px;
