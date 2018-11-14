@@ -61,7 +61,7 @@ $(document.body).on('click',".Jedi", function(){
 })
 $(document.body).on('click',".enemy", function(){
     char2 = eval($(this).attr("id"));
-    duel(char1, char2);
+    setTimeout(function(){duel(char1, char2)},300);
 })
 $(document.body).on('click',"#attack", function(){
     audio.play();
